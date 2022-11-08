@@ -7,21 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelFirstDemo
+namespace DataBaseFirstExo1
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Client
+    public partial class Employee
     {
-        public int Id { get; set; }
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
-        public System.DateTime DateNaissance { get; set; }
-
-        public int VilleId { get; set; }
+        public int id { get; set; }
+        public string lastname { get; set; }
+        public string firstname { get; set; }
+        public Nullable<int> age { get; set; }
+        public int addressId { get; set; }
     
-
-        public virtual Ville Ville { get; set; }
+        public virtual Address Address { get; set; }
     }
 }

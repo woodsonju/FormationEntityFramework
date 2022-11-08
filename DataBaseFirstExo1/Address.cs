@@ -7,21 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ModelFirstDemo
+namespace DataBaseFirstExo1
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Client
+    public partial class Address
     {
-        public int Id { get; set; }
-        public string Nom { get; set; }
-        public string Prenom { get; set; }
-        public System.DateTime DateNaissance { get; set; }
-
-        public int VilleId { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Address()
+        {
+            this.Employee = new HashSet<Employee>();
+        }
     
-
-        public virtual Ville Ville { get; set; }
+        public int Id { get; set; }
+        public Nullable<int> Num { get; set; }
+        public string Street { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Employee> Employee { get; set; }
     }
 }
