@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D68C11CB-84D1-4ACF-A8D2-71AD6A172BBB}</ProjectGuid>
+    <ProjectGuid>{CF4E5674-5CB2-416A-BB39-7C47916BF500}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CodeFirstDemo</RootNamespace>
-    <AssemblyName>CodeFirstDemo</AssemblyName>
+    <RootNamespace>CodeFirstExo1</RootNamespace>
+    <AssemblyName>CodeFirstExo1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,15 +52,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\IVilleDao.cs" />
-    <Compile Include="DAO\VilleDaoImpl.cs" />
-    <Compile Include="Migrations\202211071119557_InitialModel.cs" />
-    <Compile Include="Migrations\202211071119557_InitialModel.Designer.cs">
-      <DependentUpon>202211071119557_InitialModel.cs</DependentUpon>
+    <Compile Include="DAO\ContactDaoImpl.cs" />
+    <Compile Include="DAO\IContactDAO.cs" />
+    <Compile Include="Migrations\202211071431018_initialModel.cs" />
+    <Compile Include="Migrations\202211071431018_initialModel.Designer.cs">
+      <DependentUpon>202211071431018_initialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\Client.cs" />
-    <Compile Include="Model\Ville.cs" />
+    <Compile Include="Model\Contact.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,8 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211071119557_InitialModel.resx">
-      <DependentUpon>202211071119557_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202211071431018_initialModel.resx">
+      <DependentUpon>202211071431018_initialModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
