@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseFirstExo1", "DataBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAnnotation", "DataAnnotation\DataAnnotation.csproj", "{77C60E7F-77FE-4EF6-89AE-23FE4FCBDE1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAPI", "FluentAPI\FluentAPI.csproj", "{8A1EF56D-D03C-4D81-8363-55821117D309}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{77C60E7F-77FE-4EF6-89AE-23FE4FCBDE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77C60E7F-77FE-4EF6-89AE-23FE4FCBDE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77C60E7F-77FE-4EF6-89AE-23FE4FCBDE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A1EF56D-D03C-4D81-8363-55821117D309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A1EF56D-D03C-4D81-8363-55821117D309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A1EF56D-D03C-4D81-8363-55821117D309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A1EF56D-D03C-4D81-8363-55821117D309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

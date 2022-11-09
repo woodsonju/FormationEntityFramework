@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77C60E7F-77FE-4EF6-89AE-23FE4FCBDE1F}</ProjectGuid>
+    <ProjectGuid>{8A1EF56D-D03C-4D81-8363-55821117D309}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataAnnotation</RootNamespace>
-    <AssemblyName>DataAnnotation</AssemblyName>
+    <RootNamespace>FluentAPI</RootNamespace>
+    <AssemblyName>FluentAPI</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -52,26 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202211081600290_initialModelTest1.cs" />
-    <Compile Include="Migrations\202211081600290_initialModelTest1.Designer.cs">
-      <DependentUpon>202211081600290_initialModelTest1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211090849508_addAnnotation.cs" />
-    <Compile Include="Migrations\202211090849508_addAnnotation.Designer.cs">
-      <DependentUpon>202211090849508_addAnnotation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211090857078_addForeignKey.cs" />
-    <Compile Include="Migrations\202211090857078_addForeignKey.Designer.cs">
-      <DependentUpon>202211090857078_addForeignKey.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.cs" />
-    <Compile Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.Designer.cs">
-      <DependentUpon>202211090917111_AddNomDeVoieClassAdresse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211090932589_modifAuthorIdNull.cs" />
-    <Compile Include="Migrations\202211090932589_modifAuthorIdNull.Designer.cs">
-      <DependentUpon>202211090932589_modifAuthorIdNull.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Adresse.cs" />
     <Compile Include="Model\Author.cs" />
@@ -86,23 +66,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211081600290_initialModelTest1.resx">
-      <DependentUpon>202211081600290_initialModelTest1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211090849508_addAnnotation.resx">
-      <DependentUpon>202211090849508_addAnnotation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211090857078_addForeignKey.resx">
-      <DependentUpon>202211090857078_addForeignKey.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.resx">
-      <DependentUpon>202211090917111_AddNomDeVoieClassAdresse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211090932589_modifAuthorIdNull.resx">
-      <DependentUpon>202211090932589_modifAuthorIdNull.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
