@@ -56,6 +56,22 @@
     <Compile Include="Migrations\202211081600290_initialModelTest1.Designer.cs">
       <DependentUpon>202211081600290_initialModelTest1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211090849508_addAnnotation.cs" />
+    <Compile Include="Migrations\202211090849508_addAnnotation.Designer.cs">
+      <DependentUpon>202211090849508_addAnnotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211090857078_addForeignKey.cs" />
+    <Compile Include="Migrations\202211090857078_addForeignKey.Designer.cs">
+      <DependentUpon>202211090857078_addForeignKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.cs" />
+    <Compile Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.Designer.cs">
+      <DependentUpon>202211090917111_AddNomDeVoieClassAdresse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211090932589_modifAuthorIdNull.cs" />
+    <Compile Include="Migrations\202211090932589_modifAuthorIdNull.Designer.cs">
+      <DependentUpon>202211090932589_modifAuthorIdNull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Adresse.cs" />
     <Compile Include="Model\Author.cs" />
@@ -73,6 +89,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202211081600290_initialModelTest1.resx">
       <DependentUpon>202211081600290_initialModelTest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211090849508_addAnnotation.resx">
+      <DependentUpon>202211090849508_addAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211090857078_addForeignKey.resx">
+      <DependentUpon>202211090857078_addForeignKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211090917111_AddNomDeVoieClassAdresse.resx">
+      <DependentUpon>202211090917111_AddNomDeVoieClassAdresse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211090932589_modifAuthorIdNull.resx">
+      <DependentUpon>202211090932589_modifAuthorIdNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

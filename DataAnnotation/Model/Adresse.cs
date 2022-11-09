@@ -12,12 +12,20 @@ namespace DataAnnotation.Model
         [Key]
         public int AdrId { get; set; }
 
+        [Required]
+        public string NomDeVoie { get; set; }
+
+        [Required]
+        [Range(1, 1000)]
         public int NumVoie { get; set; }
 
+        [Required, DataType(DataType.PostalCode)] 
         public string CodePostale { get; set; }
 
+        [Required]
         public string Ville { get; set; }
 
+        [Required]
         public string Pays { get; set; }
     }
 }
