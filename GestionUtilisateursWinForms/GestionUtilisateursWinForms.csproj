@@ -62,12 +62,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionUtilisateurs_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionUtilisateurs_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Metier\IUtilisateur.cs" />
+    <Compile Include="Migrations\202211100820233_initialModel.cs" />
+    <Compile Include="Migrations\202211100820233_initialModel.Designer.cs">
+      <DependentUpon>202211100820233_initialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Utilisateur.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\UtilisateurService.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211100820233_initialModel.resx">
+      <DependentUpon>202211100820233_initialModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +93,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="GestionUtilisateurs_dbDataSet.xsc">
+      <DependentUpon>GestionUtilisateurs_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GestionUtilisateurs_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GestionUtilisateurs_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GestionUtilisateurs_dbDataSet.xss">
+      <DependentUpon>GestionUtilisateurs_dbDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
